@@ -9,7 +9,7 @@ class ViewController: UIViewController{
         
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.yellow
-        self.view.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+        self.view.frame = CGRect(x: 0, y: 0, width: 300, height: 400)
         
         let button: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 80, height: 40))
         button.center = self.view.center
@@ -23,7 +23,12 @@ class ViewController: UIViewController{
     }
     
     func click(){
-        self.view.backgroundColor = UIColor.cyan
+        if view.backgroundColor == .yellow{
+            view.backgroundColor = .cyan
+        }
+        else{
+            view.backgroundColor = .yellow
+        }
     }
 }
 
