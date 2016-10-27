@@ -3,10 +3,6 @@
 import UIKit
 
 
-// swift2
-//func changeScores( scores: inout [Int] , by changeScore: Int->Int )
-
-// swift3
 class StudentsList{
     
     var students : [String]

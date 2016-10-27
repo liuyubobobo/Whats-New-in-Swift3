@@ -3,24 +3,19 @@
 import UIKit
 
 
-// 函数名为动词
-// 尾缀 -ed 表示已经发生, -ing 表示名词: 有返回值, 不影响原对象
+// 动词函数名
+// 尾缀 -ed 表示过去式, -ing 表示名词: 有返回值, 不影响原对象
 // 没有这些尾缀，则为动作，直接作用于原对象
 
-// reverse
-var arr1 = [0,1,2,3,4,5]
-arr1.reversed()
-arr1
+var scores = [98,92,78,100]
 
-let arr2 = arr1.reversed()
-arr2
-
-arr1.reverse()
-arr1
+// enumerate
+for scoreInfo in scores.enumerated(){
+    print(scoreInfo)
+}
 
 
 // sort
-var scores = [98,92,78,100]
 scores.sorted()
 scores
 
@@ -34,9 +29,28 @@ scores.sort(by: >)
 scores
 
 
-// enumerate
-for scoreInfo in scores.enumerated(){
-    print(scoreInfo)
+// reverse
+var arr = [0,1,2,3,4]
+
+arr.reversed()
+arr
+
+arr.reverse()
+arr
+
+for i in (1...5).reversed(){
+    print(i)
 }
+
+for (index,item) in arr.reversed().enumerated(){
+    print(item)
+}
+arr
+
+
+
+
+
+
 
 

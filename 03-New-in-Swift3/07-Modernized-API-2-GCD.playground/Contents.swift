@@ -10,9 +10,9 @@ import UIKit
 
 // new way, Swift 3
 let queue = DispatchQueue(label: "com.test.myqueue")
-//queue.async {
-//    print("Hello World")
-//}
+queue.async {
+    print("Hello World")
+}
 
 queue.async {
     for i in 0...10000{

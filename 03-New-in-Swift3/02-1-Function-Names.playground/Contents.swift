@@ -22,19 +22,19 @@ func welcome( to name: String , with message: String) -> String{
 welcome(to: "liuyubobobo", with: "Good morning!")
 
 
-// swift3中，函数的参数名可以是关键字
-func myIndex( while for: Int, func in: [Int] ){
+// 使用 _ 省略外部参数名
+func gcd(_ a: Int, _ b: Int) -> Int{
+    return 0
 }
 
-myIndex(while: 2, func: [3])
+gcd(4, 12)
 
 
-// 使用 _ 省略外部参数名
 func add(_ a: Int, and b: Int) -> Int{
     return a + b
 }
 
-add(3, and: 4)
+add(4, and: 2)
 
 
 

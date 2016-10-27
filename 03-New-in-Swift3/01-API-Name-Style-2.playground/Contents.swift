@@ -2,31 +2,24 @@
 
 import UIKit
 
-var str = "Hello, Swift"
+// 其他例子:
 
-// 取消函数名称中无用的词汇
-// 包括参数类型和返回值类型
+//swift2: numberOfSectionsInTableView(tableView)
+//swift3: numberOfSections(in: tableView)
 
-//swift2: helloString.stringByAppendingString("world")
-str.append("!")
-str.appending(" Hello, world!")
-str
+//swift2: pngImageData.writeToURL(fileURL, atomically: false)
+//swift3: pngImageData.write(to: fileURL, options: [])
 
+//swift2: addQuadCurveToPoint(endPoint, controlPoint: controlPoint)
+//swift3: addQuadCurve(to: endPoint, controlPoint: controlPoint)
 
-//swift2: UIColor.blueColor()
-UIColor.blue
+//swift2:
+//panelView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor)
+//swift3:
+//panelView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
 
-
-var scores = [99,88,72]
-//swift2: scores.maxElement()
-scores.max()
-scores.min()
-
-//swift2: scores.insert(100, atIndex: 0)
-scores.insert(100, at: 0)
-
-
-// 其他例子：
+//swift2: SCNAction.moveTo(SCNVector3Make(1, 1, 1), duration: 1)
+//swift3: SCNAction.move(to: SCNVector3(1, 1, 1), duration: 1)
 
 //swift2: WKInterfaceDevice.currentDevice()
 //swift3: WKInterfaceDevice.current()
