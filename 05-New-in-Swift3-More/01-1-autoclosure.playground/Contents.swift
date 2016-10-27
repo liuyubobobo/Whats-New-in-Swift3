@@ -2,6 +2,7 @@
 
 import UIKit
 
+
 // 写法1，使用if-else
 let username: String? = "liuyubobobo"
 let screenname: String
@@ -25,6 +26,6 @@ func login(username: String, password: String) -> String?{
 let screenname3 = login(username: "liuyubobobo",password: "123456") != nil ? login(username: "liuyubobobo",password: "123456")! : "Guest"
 
 // 使用??
-let screen4 = login(username: "liuyubobobo",password: "123456") ?? "Guest"
+let screenname4 = login(username: "liuyubobobo",password: "123456") ?? "Guest"
 
 
